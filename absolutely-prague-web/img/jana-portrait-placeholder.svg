@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700" role="img" aria-label="Jana portrait placeholder">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#f4c168"/>
+      <stop offset="100%" stop-color="#b87927"/>
+    </radialGradient>
+  </defs>
+  <rect width="700" height="700" fill="#f1e4cb"/>
+  <circle cx="350" cy="350" r="280" fill="url(#bg)"/>
+  <circle cx="350" cy="290" r="115" fill="#f7d9bf"/>
+  <path d="M225,520 C235,430 305,400 350,400 C395,400 465,430 475,520 Z" fill="#f7d9bf"/>
+  <path d="M225,520 C245,455 298,430 350,430 C402,430 455,455 475,520 L510,620 L190,620 Z" fill="#e8bc34"/>
+  <path d="M240,255 C265,190 300,170 350,170 C400,170 435,190 460,255 C455,205 420,130 350,130 C280,130 245,205 240,255 Z" fill="#4b3222"/>
+  <text x="350" y="670" text-anchor="middle" fill="#5c421d" font-size="34" font-family="Georgia, serif">Jana Portrait Placeholder</text>
+</svg>

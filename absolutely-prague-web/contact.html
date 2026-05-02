@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Absolutely Prague</title>
+    <meta
+      name="description"
+      content="Contact Absolutely Prague to design your personalized private Prague tour or day trip from Prague."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Absolutely Prague home">Absolutely Prague</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false">Experiences</button>
+            <div class="dropdown-menu" role="menu">
+              <a href="tours-prague.html" role="menuitem">Prague Tours</a>
+              <a href="tours-beyond-prague.html" role="menuitem">Day Trips from Prague</a>
+            </div>
+          </div>
+          <a href="references.html">References</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="travel-agents.html" class="btn btn-nav">For Travel Agents</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero page-hero-contact reveal">
+        <div class="container">
+          <p class="eyebrow">Contact</p>
+          <h1>Let's Design Your Perfect Prague Experience</h1>
+          <p class="lead">
+            Tell me about your dates, travel style, and interests. I will reply with a personalized proposal.
+          </p>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="container split">
+          <article class="prose">
+            <h2>How to Reach Me</h2>
+            <p>
+              This local prototype includes a form layout only. For live deployment, connect it to your preferred
+              email service or form backend.
+            </p>
+            <p><strong>Email:</strong> hello@absolutelyprague.com</p>
+            <p><strong>Typical reply time:</strong> within 24 hours</p>
+            <p><strong>Languages:</strong> English, Czech</p>
+          </article>
+
+          <form class="card contact-form" aria-label="Inquiry form">
+            <h2>Inquiry Form</h2>
+            <label for="name">Your Name</label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="tour-type">Interested In</label>
+            <select id="tour-type" name="tour-type">
+              <option>In Prague Tour</option>
+              <option>Beyond Prague Day Trip</option>
+              <option>Multi-Day Combination</option>
+              <option>Travel Agent Partnership</option>
+            </select>
+
+            <label for="dates">Travel Dates</label>
+            <input id="dates" name="dates" type="text" placeholder="e.g. June 12-15, 2026" />
+
+            <label for="message">Tell Me What Excites You Most</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Absolutely Prague</p>
+        <p>Private tours designed with care, warmth, and local expertise.</p>
+        <p>© <span id="year"></span> Absolutely Prague</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
