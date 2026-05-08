@@ -12,7 +12,6 @@
   --shadow: 0 18px 38px rgba(20, 16, 12, 0.14);
   --radius-lg: 1.4rem;
   --radius-md: 0.9rem;
-  --radius-sm: 0.6rem;
   --container: 1140px;
 }
 
@@ -249,7 +248,7 @@ p {
   isolation: isolate;
   background:
     linear-gradient(120deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.4)),
-    url("../img/praha pozadi homepage.webp") center / cover no-repeat;
+    url("../img/praha pozadi homepage 2.webp") center / cover no-repeat;
 }
 
 .hero-overlay {
