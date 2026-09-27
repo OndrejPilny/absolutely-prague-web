@@ -6,7 +6,7 @@
     <title>Contact | Absolutely Prague</title>
     <meta
       name="description"
-      content="Contact Absolutely Prague to design your personalized private Prague tour or day trip from Prague."
+      content="Contact Jana Pilna to plan private Prague tours, day trips, transfers, reservations, and a personalized Prague itinerary."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,50 +46,353 @@
       <section class="page-hero page-hero-contact reveal">
         <div class="container">
           <p class="eyebrow">Contact</p>
-          <h1>Let's Design Your Perfect Prague Experience</h1>
+          <h1>Contact</h1>
           <p class="lead">
-            Tell me about your dates, travel style, and interests. I will reply with a personalized proposal.
+            Planning your Prague experience should feel effortless. Tell me what you have in mind, and I will
+            help shape every detail.
           </p>
         </div>
       </section>
 
       <section class="section reveal">
-        <div class="container split">
-          <article class="prose">
-            <h2>How to Reach Me</h2>
-            <p>
-              This local prototype includes a form layout only. For live deployment, connect it to your preferred
-              email service or form backend.
-            </p>
-            <p><strong>Email:</strong> hello@absolutelyprague.com</p>
-            <p><strong>Typical reply time:</strong> within 24 hours</p>
-            <p><strong>Languages:</strong> English, Czech</p>
-          </article>
+        <div class="container contact-intro prose">
+          <h2>Every Detail, Thoughtfully Arranged</h2>
+          <p>
+            Planning your Prague experience should feel effortless. Whether you're looking for a single tour or a
+            complete Prague itinerary, including airport transfers, restaurant reservations, theatre tickets, and
+            WhatsApp support throughout your stay, I'm here to help.
+          </p>
+          <p>
+            I don't just guide tours. I help orchestrate your entire Prague experience, so you can focus on
+            enjoying the city while I handle the details.
+          </p>
+          <p>
+            Fill out the form below to tell me about your trip, or reach out directly via email, phone, or
+            WhatsApp.
+          </p>
+        </div>
+      </section>
 
-          <form class="card contact-form" aria-label="Inquiry form">
-            <h2>Inquiry Form</h2>
-            <label for="name">Your Name</label>
-            <input id="name" name="name" type="text" required />
+      <section class="section panel reveal">
+        <div class="container contact-layout">
+          <form class="card contact-form" aria-label="Inquiry form" action="#" method="post">
+            <p class="eyebrow">Inquiry Form</p>
+            <h2>Tell Me About Your Trip</h2>
+            <p class="fine-print form-meta">Fields marked <span class="required">*</span> are required.</p>
 
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required />
+            <fieldset class="contact-fieldset">
+              <legend>Basic Information</legend>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="name">Name <span class="required" aria-hidden="true">*</span></label>
+                  <input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required />
+                </div>
 
-            <label for="tour-type">Interested In</label>
-            <select id="tour-type" name="tour-type">
-              <option>In Prague Tour</option>
-              <option>Beyond Prague Day Trip</option>
-              <option>Multi-Day Combination</option>
-              <option>Travel Agent Partnership</option>
-            </select>
+                <div class="form-field">
+                  <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="name@example.com"
+                    required
+                  />
+                </div>
 
-            <label for="dates">Travel Dates</label>
-            <input id="dates" name="dates" type="text" placeholder="e.g. June 12-15, 2026" />
+                <div class="form-field">
+                  <label for="phone">Phone / WhatsApp</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    autocomplete="tel"
+                    inputmode="tel"
+                    aria-describedby="phone-note"
+                    placeholder="Optional"
+                  />
+                  <p id="phone-note" class="field-note">Optional, but helpful for quick communication.</p>
+                </div>
 
-            <label for="message">Tell Me What Excites You Most</label>
-            <textarea id="message" name="message" rows="5"></textarea>
+                <div class="form-field">
+                  <label for="origin">Where are you traveling from?</label>
+                  <input
+                    id="origin"
+                    name="origin"
+                    type="text"
+                    aria-describedby="origin-note"
+                    placeholder="San Francisco, USA"
+                  />
+                  <p id="origin-note" class="field-note">Share your home city or country.</p>
+                </div>
+              </div>
+            </fieldset>
 
-            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+            <fieldset class="contact-fieldset">
+              <legend>Trip Details</legend>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="dates">Preferred dates (or flexible)</label>
+                  <input
+                    id="dates"
+                    name="dates"
+                    type="text"
+                    aria-describedby="dates-note"
+                    placeholder="June 15-20, 2027 or late summer"
+                  />
+                  <p id="dates-note" class="field-note">A date range or a general season both work well.</p>
+                </div>
+
+                <div class="form-field">
+                  <label for="travelers">Number of travelers</label>
+                  <select id="travelers" name="travelers">
+                    <option value="">Please select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7+">7+</option>
+                  </select>
+                </div>
+
+                <div class="form-field full-width">
+                  <label for="hotel">Where are you staying in Prague?</label>
+                  <input
+                    id="hotel"
+                    name="hotel"
+                    type="text"
+                    aria-describedby="hotel-note"
+                    placeholder="Hotel name, if known"
+                  />
+                  <p id="hotel-note" class="field-note">If you already know your hotel, include it here.</p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="contact-fieldset">
+              <legend>What Interests You?</legend>
+              <div class="checkbox-grid" role="group" aria-label="Trip interests">
+                <label class="checkbox-option" for="interest-prague">
+                  <input id="interest-prague" name="interests" type="checkbox" value="Prague tours" />
+                  <span>Prague tours</span>
+                </label>
+                <label class="checkbox-option" for="interest-day-trips">
+                  <input
+                    id="interest-day-trips"
+                    name="interests"
+                    type="checkbox"
+                    value="Day trips beyond Prague"
+                  />
+                  <span>Day trips beyond Prague (Kutna Hora, Cesky Krumlov, and more)</span>
+                </label>
+                <label class="checkbox-option" for="interest-transfers">
+                  <input
+                    id="interest-transfers"
+                    name="interests"
+                    type="checkbox"
+                    value="Airport or train station transfers"
+                  />
+                  <span>Airport or train station transfers</span>
+                </label>
+                <label class="checkbox-option" for="interest-restaurants">
+                  <input
+                    id="interest-restaurants"
+                    name="interests"
+                    type="checkbox"
+                    value="Restaurant reservations and recommendations"
+                  />
+                  <span>Restaurant reservations and recommendations</span>
+                </label>
+                <label class="checkbox-option" for="interest-theatre">
+                  <input
+                    id="interest-theatre"
+                    name="interests"
+                    type="checkbox"
+                    value="Theatre or concert tickets"
+                  />
+                  <span>Theatre or concert tickets</span>
+                </label>
+                <label class="checkbox-option" for="interest-itinerary">
+                  <input
+                    id="interest-itinerary"
+                    name="interests"
+                    type="checkbox"
+                    value="Full itinerary planning"
+                  />
+                  <span>Full itinerary planning for my entire stay</span>
+                </label>
+                <label class="checkbox-option" for="interest-europe">
+                  <input
+                    id="interest-europe"
+                    name="interests"
+                    type="checkbox"
+                    value="Transfers to other European cities"
+                  />
+                  <span>Transfers to other European cities such as Vienna, Munich, or Berlin</span>
+                </label>
+                <label class="checkbox-option" for="interest-other">
+                  <input id="interest-other" name="interests" type="checkbox" value="Other" />
+                  <span>Other (please specify in your message below)</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="contact-fieldset">
+              <legend>Your Message</legend>
+              <div class="form-field">
+                <label for="message">Tell me about your trip</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="What would make your Prague experience unforgettable? Any specific interests, questions, or requests? The more you share, the better I can tailor your experience."
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset class="contact-fieldset optional-fieldset">
+              <legend>Optional</legend>
+              <div class="form-field full-width">
+                <label for="source">How did you hear about me?</label>
+                <select id="source" name="source">
+                  <option value="">Please select</option>
+                  <option value="Google search">Google search</option>
+                  <option value="Travel agent referral">Travel agent referral</option>
+                  <option value="Friend or family recommendation">Friend or family recommendation</option>
+                  <option value="Hotel concierge recommendation">Hotel concierge recommendation</option>
+                  <option value="TripAdvisor or review site">TripAdvisor or review site</option>
+                  <option value="Social media">Social media</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <div class="contact-submit">
+              <button class="btn btn-primary" type="submit">Send My Inquiry</button>
+              <p class="fine-print">I typically respond within 24 hours. All inquiries are confidential.</p>
+            </div>
           </form>
+
+          <aside class="card contact-sidebar" aria-labelledby="direct-contact-title">
+            <p class="eyebrow">Direct Contact</p>
+            <h2 id="direct-contact-title">Reach Out Directly</h2>
+
+            <div class="contact-method">
+              <h3>Email</h3>
+              <a class="contact-link" href="mailto:jana.pilna.prague@gmail.com">jana.pilna.prague@gmail.com</a>
+            </div>
+
+            <div class="contact-method">
+              <h3>Phone &amp; WhatsApp</h3>
+              <a class="contact-link contact-phone-link" href="tel:+420721268142">
+                <span class="wa-icon" aria-hidden="true">WA</span>
+                <span>+420 721 268 142</span>
+              </a>
+              <p class="fine-print">Available on WhatsApp for quick questions and support during your stay.</p>
+            </div>
+
+            <div class="contact-method">
+              <h3>Office Hours</h3>
+              <dl class="office-hours">
+                <div>
+                  <dt>CET</dt>
+                  <dd>8:00 AM - 6:00 PM</dd>
+                </div>
+                <div>
+                  <dt>EST</dt>
+                  <dd>2:00 AM - 12:00 PM</dd>
+                </div>
+                <div>
+                  <dt>PST</dt>
+                  <dd>11:00 PM - 9:00 AM (previous day)</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="contact-method">
+              <h3>Company Address</h3>
+              <address>
+                Konviktska 24<br />
+                Praha 1, 110 00<br />
+                Czech Republic
+              </address>
+            </div>
+
+            <p class="company-meta">Company ID: 06824404</p>
+            <p class="contact-aside-note">
+              Prefer to call? I'm happy to schedule a time that works for your time zone. Just mention it in
+              your message or email.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="container">
+          <p class="eyebrow">What Happens Next</p>
+          <h2>What Happens Next</h2>
+          <div class="grid two-col process-grid">
+            <article class="card step-card">
+              <div class="step-number" aria-hidden="true">1</div>
+              <h3>I'll Review Your Inquiry</h3>
+              <p>
+                Within 24 hours, I'll respond with initial thoughts and any questions that help me design the
+                perfect experience for you.
+              </p>
+            </article>
+
+            <article class="card step-card">
+              <div class="step-number" aria-hidden="true">2</div>
+              <h3>We'll Design Your Itinerary Together</h3>
+              <p>
+                Based on your interests, dates, and preferences, I'll create a personalized proposal covering
+                tours, timing, logistics, and pricing. We'll refine it until it feels exactly right.
+              </p>
+            </article>
+
+            <article class="card step-card">
+              <div class="step-number" aria-hidden="true">3</div>
+              <h3>I'll Handle All the Details</h3>
+              <p>
+                Once you're happy with the plan, I'll book everything from reservations and tickets to transfers
+                and special arrangements. You'll receive a complete itinerary with everything you need.
+              </p>
+            </article>
+
+            <article class="card step-card">
+              <div class="step-number" aria-hidden="true">4</div>
+              <h3>You'll Have My Support Throughout</h3>
+              <p>
+                During your stay in Prague, I'm available via WhatsApp for questions, last-minute
+                recommendations, or support whenever you need it.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section panel reveal">
+        <div class="container">
+          <article class="card callout-card contact-services">
+            <p class="eyebrow">Beyond Tours</p>
+            <h2>Full-Service Support</h2>
+            <p>
+              I can help with every aspect of your Prague experience, from arrival logistics to hard-to-book
+              cultural plans and support throughout your stay.
+            </p>
+            <ul class="checklist services-list">
+              <li>Airport or train station pickup and transfers</li>
+              <li>Private car transfers to Vienna, Munich, Berlin, or other destinations</li>
+              <li>Restaurant reservations, including hard-to-book spots</li>
+              <li>Theatre, opera, and concert tickets</li>
+              <li>Special access to cultural institutions</li>
+              <li>Connections with local artisans, craftspeople, and experts</li>
+              <li>WhatsApp support during your stay</li>
+            </ul>
+            <p class="fine-print">Just ask - I'm here to make your trip seamless.</p>
+          </article>
         </div>
       </section>
     </main>
