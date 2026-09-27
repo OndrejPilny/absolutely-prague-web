@@ -248,17 +248,39 @@ p {
 }
 
 .btn-nav {
-  background: linear-gradient(135deg, #e4c86f, #b8892d);
-  color: #20180d;
-  font-size: 0.88rem;
-  padding: 0.7rem 1rem;
-  box-shadow: 0 10px 22px rgba(184, 137, 45, 0.22);
+  background: linear-gradient(135deg, #c8952e, #8e661c);
+  border-color: rgba(93, 68, 29, 0.28);
+  color: #fffdf8;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  padding: 0.78rem 1.1rem;
+  box-shadow: 0 12px 26px rgba(142, 102, 28, 0.3);
+}
+
+.main-nav > a.btn-nav {
+  background: linear-gradient(135deg, #c8952e, #8e661c);
+  border: 1px solid rgba(93, 68, 29, 0.28);
+  color: #fffdf8;
+  opacity: 1;
 }
 
 .btn-primary:hover,
 .btn-secondary:hover,
 .btn-nav:hover {
   box-shadow: 0 16px 34px rgba(184, 137, 45, 0.22);
+}
+
+.main-nav > a.btn-nav:hover,
+.main-nav > a.btn-nav:focus-visible,
+.main-nav > a.btn-nav.active {
+  background: linear-gradient(135deg, #d3a74a, #8e661c);
+  color: #fffdf8;
+}
+
+.btn-nav:hover,
+.btn-nav:focus-visible {
+  background: linear-gradient(135deg, #d3a74a, #8e661c);
 }
 
 .hero {
@@ -505,6 +527,49 @@ p {
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(246, 235, 206, 0.82)),
     url("../img/prague-view-placeholder.svg") center / cover no-repeat;
+}
+
+.about-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.about-prose-lead p:first-child {
+  font-size: 1.1rem;
+}
+
+.about-image {
+  aspect-ratio: 4 / 5;
+}
+
+.about-image-wide {
+  aspect-ratio: 5 / 4;
+}
+
+.about-image-portrait img {
+  object-position: center 24%;
+}
+
+.about-image-family img {
+  object-position: center 28%;
+}
+
+.about-image-theatre img {
+  object-position: center 22%;
+}
+
+.about-image-life img {
+  object-position: center 35%;
+}
+
+.about-cta-card {
+  max-width: 42rem;
+  margin: 0 auto;
+  text-align: center;
+  justify-items: center;
+}
+
+.about-cta-card .btn {
+  width: fit-content;
 }
 
 .contact-intro {
