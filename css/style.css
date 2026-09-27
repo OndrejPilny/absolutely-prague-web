@@ -16,6 +16,7 @@
   --header-height: 6.75rem;
   --brand-logo-height: 5rem;
   --footer-logo-height: 4.75rem;
+  --hero-portrait-size: clamp(11.1rem, 24vw, 16.8rem);
 }
 
 * {
@@ -276,12 +277,6 @@ p {
   max-width: 56rem;
 }
 
-.hero-logo {
-  font-size: clamp(1.6rem, 2.5vw, 2.3rem);
-  font-family: "Cormorant Garamond", Georgia, serif;
-  margin-bottom: 0.9rem;
-}
-
 .hero-subheadline {
   font-size: clamp(1rem, 1.4vw, 1.3rem);
   max-width: 50rem;
@@ -290,12 +285,13 @@ p {
 }
 
 .hero-portrait {
-  width: clamp(7.4rem, 16vw, 11.2rem);
-  aspect-ratio: 1;
+  width: var(--hero-portrait-size);
+  height: var(--hero-portrait-size);
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.84);
   margin: 1.5rem auto;
+  flex-shrink: 0;
 }
 
 .hero-actions {
@@ -303,13 +299,6 @@ p {
   justify-content: center;
   gap: 0.8rem;
   flex-wrap: wrap;
-}
-
-.hero-tagline {
-  margin-top: 1rem;
-  font-size: 0.96rem;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.9);
 }
 
 .section {
@@ -608,6 +597,7 @@ p {
     --header-height: 5.75rem;
     --brand-logo-height: 4rem;
     --footer-logo-height: 3.75rem;
+    --hero-portrait-size: clamp(7.4rem, 16vw, 11.2rem);
   }
 
   .container {
